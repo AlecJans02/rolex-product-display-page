@@ -1,0 +1,408 @@
+body {
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+}
+
+.homePage {
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+}
+
+.pageTitle {
+    text-align: center;
+    margin-top: -100px;
+    z-index: 5;
+    position: absolute;
+    width: 100%;
+}
+
+.title {
+    font-size: 5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: black;
+}
+
+.displayVideo {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+}
+
+video {
+    overflow: hidden;
+    padding: min(50px);
+}
+
+.quickInfo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color: white;
+    margin-top: 100px;
+    white-space: normal;
+    margin-bottom: 50px;
+}
+
+.infoH1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3.4rem;
+    color: black;
+    font-weight: bold;
+    padding-left: min(200px);
+    padding-right: min(200px);
+    text-align: center;
+}
+
+.infoP {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: black;
+    padding-left: min(250px);
+    padding-right: min(250px);
+    text-align: center;
+}
+
+.rolexAtag {
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+    
+}
+
+.websiteCard {
+    background-color: rgba(225, 225, 225, 0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    border: 1px solid rgba(225, 225, 225, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    height: 50px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.daytona {
+    height: 650px;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(178,174,241,1) 0%, rgba(162,162,232,1) 20%, rgba(135,225,244,1) 100%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.daytonaInfo {
+    height: 400px;
+    width: 30%;
+    background-color: transparent;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.daytonaPictures {
+    height: 400px;
+    width: 30%;
+    min-width: 305px;
+    background-color: rgba(225, 225, 225, 0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    border: 1px solid rgba(225, 225, 225, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.currentDaytonaPhoto {
+    height: 300px;
+    width: 300px;
+    background-color: white;
+}
+
+.daytonaForm {
+    margin-top: 20px;
+}
+
+.oneNine {
+    height: 650px;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(231,198,112,1) 0%, rgba(232,187,162,1) 20%, rgba(244,151,135,1) 100%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.oneNineInfo {
+    height: 400px;
+    width: 30%;
+    background-color: transparent;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.oneNinePictures {
+    height: 400px;
+    width: 30%;
+    min-width: 305px;
+    background-color: rgba(225, 225, 225, 0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    border: 1px solid rgba(225, 225, 225, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.currentOneNinePhoto {
+    height: 300px;
+    width: 300px;
+    background-color: white;
+}
+
+.oneNineForm {
+    margin-top: 20px;
+}
+
+.yacht {
+    height: 650px;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(123,219,146,1) 0%, rgba(136,213,176,1) 20%, rgba(244,219,135,1) 100%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.yachtInfo {
+    height: 400px;
+    width: 30%;
+    background-color: transparent;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.yachtPictures {
+    height: 400px;
+    width: 30%;
+    min-width: 305px;
+    background-color: rgba(225, 225, 225, 0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    border: 1px solid rgba(225, 225, 225, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.currentYachtPhoto {
+    height: 300px;
+    width: 300px;
+    background-color: white;
+}
+
+.yachtForm {
+    margin-top: 20px;
+}
+
+.dweller {
+    height: 650px;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(240,148,235,1) 0%, rgba(202,125,226,1) 20%, rgba(129,103,232,1) 100%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.dwellerInfo {
+    height: 400px;
+    width: 30%;
+    background-color: transparent;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.dwellerPictures {
+    height: 400px;
+    width: 30%;
+    min-width: 305px;
+    background-color: rgba(225, 225, 225, 0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    border: 1px solid rgba(225, 225, 225, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.currentDwellerPhoto {
+    height: 300px;
+    width: 300px;
+    background-color: white;
+}
+
+.dwellerForm {
+    margin-top: 20px;
+}
+
+.master {
+    height: 650px;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(229,236,137,1) 0%, rgba(215,226,125,1) 20%, rgba(15,241,238,1) 100%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.masterInfo {
+    height: 400px;
+    width: 30%;
+    background-color: transparent;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.masterPictures {
+    height: 400px;
+    width: 30%;
+    min-width: 305px;
+    background-color: rgba(225, 225, 225, 0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    border: 1px solid rgba(225, 225, 225, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.currentMasterPhoto {
+    height: 300px;
+    width: 300px;
+    background-color: white;
+}
+
+.masterForm {
+    margin-top: 20px;
+}
+
+.explore {
+    height: 650px;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(137,186,236,1) 0%, rgba(113,233,232,1) 20%, rgba(14,114,226,1) 100%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.exploreInfo {
+    height: 400px;
+    width: 30%;
+    background-color: transparent;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.explorePictures {
+    height: 400px;
+    width: 30%;
+    min-width: 305px;
+    background-color: rgba(225, 225, 225, 0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    border: 1px solid rgba(225, 225, 225, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.currentExplorePhoto {
+    height: 300px;
+    width: 300px;
+    background-color: white;
+}
+
+.exploreForm {
+    margin-top: 20px;
+}
+
+.oyster {
+    height: 650px;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(208,165,84,1) 0%, rgba(233,135,113,1) 20%, rgba(226,195,14,1) 100%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.oysterInfo {
+    height: 400px;
+    width: 30%;
+    background-color: transparent;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.oysterPictures {
+    height: 400px;
+    width: 30%;
+    min-width: 305px;
+    background-color: rgba(225, 225, 225, 0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    border: 1px solid rgba(225, 225, 225, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.currentOysterPhoto {
+    height: 300px;
+    width: 300px;
+    background-color: white;
+}
+
+.oysterForm {
+    margin-top: 20px;
+}
