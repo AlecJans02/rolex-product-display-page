@@ -137,13 +137,30 @@ class Homepage extends Component {
                 </div>
                 <div className="oyster">
                     <div className="oysterInfo">
-                        <h1>EXPLORER 40</h1>
-                        <h2>Oyster, 40 mm, Oystersteel</h2>
+                        <h1>OYSTER PERPETUAL 41</h1>
+                        <h2>Oyster, 41 mm, Oystersteel</h2>
                         <a>View official product page</a>
                     </div>
                     <div className="oysterPictures">
                         <div className="currentOysterPhoto" id="currentOysterPhoto"></div>
                         <form className='oysterForm'>
+                            <input type="radio" id="ColorA" name="colorInput" value="ColorA"></input>
+                            <input type="radio" id="ColorB" name="colorInput" value="ColorB"></input>
+                            <input type="radio" id="ColorC" name="colorInput" value="ColorC"></input>
+                            <input type="radio" id="ColorD" name="colorInput" value="ColorD"></input>
+                            <input type="radio" id="ColorE" name="colorInput" value="ColorE"></input>
+                        </form>
+                    </div>
+                </div>
+                <div className="dayDate">
+                    <div className="dayDateInfo">
+                        <h1>DAY-DATE 36</h1>
+                        <h2>Oyster, 36 mm, Everose Gold and Diamonds</h2>
+                        <a>View official product page</a>
+                    </div>
+                    <div className="dayDatePictures">
+                        <div className="currentDayDatePhoto" id="currentDayDatePhoto"></div>
+                        <form className='dayDateForm'>
                             <input type="radio" id="ColorA" name="colorInput" value="ColorA"></input>
                             <input type="radio" id="ColorB" name="colorInput" value="ColorB"></input>
                             <input type="radio" id="ColorC" name="colorInput" value="ColorC"></input>

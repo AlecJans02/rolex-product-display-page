@@ -92,6 +92,15 @@ video {
     align-items: center;
 }
 
+@keyframes bg-animation {
+    0% {
+        background-position: left;
+    }
+    100% {
+        background-position: right;
+    }
+}
+
 .daytona {
     height: 650px;
     width: 100%;
@@ -99,6 +108,8 @@ video {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background-size: 400%;
+    animation: bg-animation 3s infinite alternate;
 }
 
 .daytonaInfo {
@@ -144,6 +155,8 @@ video {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background-size: 400%;
+    animation: bg-animation 3s infinite alternate;
 }
 
 .oneNineInfo {
@@ -189,6 +202,8 @@ video {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background-size: 400%;
+    animation: bg-animation 3s infinite alternate;
 }
 
 .yachtInfo {
@@ -234,6 +249,8 @@ video {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background-size: 400%;
+    animation: bg-animation 3s infinite alternate;
 }
 
 .dwellerInfo {
@@ -279,6 +296,8 @@ video {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background-size: 400%;
+    animation: bg-animation 3s infinite alternate;
 }
 
 .masterInfo {
@@ -324,6 +343,8 @@ video {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background-size: 400%;
+    animation: bg-animation 3s infinite alternate;
 }
 
 .exploreInfo {
@@ -369,6 +390,8 @@ video {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background-size: 400%;
+    animation: bg-animation 3s infinite alternate;
 }
 
 .oysterInfo {
@@ -404,5 +427,52 @@ video {
 }
 
 .oysterForm {
+    margin-top: 20px;
+}
+
+.dayDate {
+    height: 650px;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(84,84,208,1) 0%, rgba(183,113,233,1) 20%, rgba(233,151,223,1) 100%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-size: 400%;
+    animation: bg-animation 3s infinite alternate;
+}
+
+.dayDateInfo {
+    height: 400px;
+    width: 30%;
+    background-color: transparent;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.dayDatePictures {
+    height: 400px;
+    width: 30%;
+    min-width: 305px;
+    background-color: rgba(225, 225, 225, 0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    border: 1px solid rgba(225, 225, 225, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.currentDayDatePhoto {
+    height: 300px;
+    width: 300px;
+    background-color: white;
+}
+
+.dayDateForm {
     margin-top: 20px;
 }

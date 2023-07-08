@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import "./Navbar.css";
 import { Gradient } from "./Gradient.js";
+import { Link } from "react-router-dom";
 
 class Navbar extends Component {
     componentDidMount() {
@@ -17,10 +18,10 @@ class Navbar extends Component {
             </div>
             <div className="overlay">
                 <ul>
-                    <li>HOME</li>
+                    <li><Link className="navLink" to="/">HOME</Link></li>
                     <li>PRODUCTS</li>
-                    <li>ABOUT</li>
-                    <li>CONTACT</li>
+                    <li><Link className="navLink" to="/AboutUsPage">ABOUT</Link></li>
+                    <li><Link className="navLink" to="/ContactPage">CONTACT</Link></li>
                 </ul>
             </div>
             </div>
