@@ -35,14 +35,14 @@ class Homepage extends Component {
                 </div>
                 <div className="daytona">
                     <div className="daytonaInfo">
-                        <h1>COSMOGRAPH DAYTONA</h1>
-                        <h2>Oyster, 40 mm, Platinum</h2>
-                        <a>View official product page</a>
+                        <h1 className="productTexth1">COSMOGRAPH DAYTONA</h1>
+                        <h2 className="productTexth2" >Oyster, 40 mm</h2>
+                        <a className="officialProductSite" target="_blank" href="https://www.rolex.com/en-us/watches/new-watches/new-cosmograph-daytona">View official product page</a>
                     </div>
                     <div className="daytonaPictures">
                         <div className="currentDaytonaPhoto" id="currentDaytonaPhoto"></div>
                         <form className='daytonaForm'>
-                            <input type="radio" id="ColorA" name="colorInput" value="ColorA"></input>
+                            <input type="radio" id="ColorA" name="colorInput" value="ColorA" defaultChecked></input>
                             <input type="radio" id="ColorB" name="colorInput" value="ColorB"></input>
                             <input type="radio" id="ColorC" name="colorInput" value="ColorC"></input>
                             <input type="radio" id="ColorD" name="colorInput" value="ColorD"></input>
@@ -52,120 +52,98 @@ class Homepage extends Component {
                 </div>
                 <div className="oneNine">
                     <div className="oneNineInfo">
-                        <h1>1908</h1>
-                        <h2>39 mm, 18 kt Yellow Gold, Polished Finish</h2>
-                        <a>View official product page</a>
+                        <h1 className="productTexth1">1908</h1>
+                        <h2 className="productTexth2">39 mm, 18 kt Gold, Polished Finish</h2>
+                        <a className="officialProductSite" target="_blank">View official product page</a>
                     </div>
                     <div className="oneNinePictures">
                         <div className="currentOneNinePhoto" id="currentOneNinePhoto"></div>
                         <form className='oneNineForm'>
-                            <input type="radio" id="ColorA" name="colorInput" value="ColorA"></input>
+                            <input type="radio" id="ColorA" name="colorInput" value="ColorA" defaultChecked></input>
                             <input type="radio" id="ColorB" name="colorInput" value="ColorB"></input>
-                            <input type="radio" id="ColorC" name="colorInput" value="ColorC"></input>
-                            <input type="radio" id="ColorD" name="colorInput" value="ColorD"></input>
-                            <input type="radio" id="ColorE" name="colorInput" value="ColorE"></input>
                         </form>
                     </div>
                 </div>
                 <div className="yacht">
                     <div className="yachtInfo">
-                        <h1>YACHT-MASTER 42</h1>
-                        <h2>Oyster, 42 mm, RLX Titanium</h2>
-                        <a>View official product page</a>
+                        <h1 className="productTexth1">YACHT-MASTER 42</h1>
+                        <h2 className="productTexth2">Oyster, 42 mm, RLX Titanium</h2>
+                        <a className="officialProductSite" target="_blank">View official product page</a>
                     </div>
                     <div className="yachtPictures">
                         <div className="currentYachtPhoto" id="currentYachtPhoto"></div>
                         <form className='yachtForm'>
-                            <input type="radio" id="ColorA" name="colorInput" value="ColorA"></input>
-                            <input type="radio" id="ColorB" name="colorInput" value="ColorB"></input>
-                            <input type="radio" id="ColorC" name="colorInput" value="ColorC"></input>
-                            <input type="radio" id="ColorD" name="colorInput" value="ColorD"></input>
-                            <input type="radio" id="ColorE" name="colorInput" value="ColorE"></input>
+                            <input type="radio" id="ColorA" name="colorInput" value="ColorA" checked></input>
                         </form>
                     </div>
                 </div>
                 <div className="dweller">
                     <div className="dwellerInfo">
-                        <h1>SKY-DWELLER</h1>
-                        <h2>Oyster, 42 mm, Oystersteel And White Gold</h2>
-                        <a>View official product page</a>
+                        <h1 className="productTexth1">SKY-DWELLER</h1>
+                        <h2 className="productTexth2">Oyster, 42 mm</h2>
+                        <a className="officialProductSite" target="_blank">View official product page</a>
                     </div>
                     <div className="dwellerPictures">
                         <div className="currentDwellerPhoto" id="currentDwellerPhoto"></div>
                         <form className='dwellerForm'>
-                            <input type="radio" id="ColorA" name="colorInput" value="ColorA"></input>
+                            <input type="radio" id="ColorA" name="colorInput" value="ColorA" defaultChecked></input>
                             <input type="radio" id="ColorB" name="colorInput" value="ColorB"></input>
                             <input type="radio" id="ColorC" name="colorInput" value="ColorC"></input>
-                            <input type="radio" id="ColorD" name="colorInput" value="ColorD"></input>
-                            <input type="radio" id="ColorE" name="colorInput" value="ColorE"></input>
                         </form>
                     </div>
                 </div>
                 <div className="master">
                     <div className="masterInfo">
-                        <h1>GMT-MASTER II</h1>
-                        <h2>Oyster, 40 mm, Oystersteel And Yellow Gold</h2>
-                        <a>View official product page</a>
+                        <h1 className="productTexth1">GMT-MASTER II</h1>
+                        <h2 className="productTexth2">Oyster, 40 mm, Oystersteel And Yellow Gold</h2>
+                        <a className="officialProductSite" target="_blank">View official product page</a>
                     </div>
                     <div className="masterPictures">
                         <div className="currentMasterPhoto" id="currentMasterPhoto"></div>
                         <form className='masterForm'>
-                            <input type="radio" id="ColorA" name="colorInput" value="ColorA"></input>
+                            <input type="radio" id="ColorA" name="colorInput" value="ColorA" defaultChecked></input>
                             <input type="radio" id="ColorB" name="colorInput" value="ColorB"></input>
-                            <input type="radio" id="ColorC" name="colorInput" value="ColorC"></input>
-                            <input type="radio" id="ColorD" name="colorInput" value="ColorD"></input>
-                            <input type="radio" id="ColorE" name="colorInput" value="ColorE"></input>
                         </form>
                     </div>
                 </div>
                 <div className="explore">
                     <div className="exploreInfo">
-                        <h1>EXPLORER 40</h1>
-                        <h2>Oyster, 40 mm, Oystersteel</h2>
-                        <a>View official product page</a>
+                        <h1 className="productTexth1">EXPLORER 40</h1>
+                        <h2 className="productTexth2">Oyster, 40 mm, Oystersteel</h2>
+                        <a className="officialProductSite" target="_blank">View official product page</a>
                     </div>
                     <div className="explorePictures">
                         <div className="currentExplorePhoto" id="currentExplorePhoto"></div>
                         <form className='exploreForm'>
-                            <input type="radio" id="ColorA" name="colorInput" value="ColorA"></input>
-                            <input type="radio" id="ColorB" name="colorInput" value="ColorB"></input>
-                            <input type="radio" id="ColorC" name="colorInput" value="ColorC"></input>
-                            <input type="radio" id="ColorD" name="colorInput" value="ColorD"></input>
-                            <input type="radio" id="ColorE" name="colorInput" value="ColorE"></input>
+                            <input type="radio" id="ColorA" name="colorInput" value="ColorA" checked></input>
                         </form>
                     </div>
                 </div>
                 <div className="oyster">
                     <div className="oysterInfo">
-                        <h1>OYSTER PERPETUAL 41</h1>
-                        <h2>Oyster, 41 mm, Oystersteel</h2>
-                        <a>View official product page</a>
+                        <h1 className="productTexth1">OYSTER PERPETUAL 41</h1>
+                        <h2 className="productTexth2">Oyster, 41 mm, Oystersteel</h2>
+                        <a className="officialProductSite" target="_blank">View official product page</a>
                     </div>
                     <div className="oysterPictures">
                         <div className="currentOysterPhoto" id="currentOysterPhoto"></div>
                         <form className='oysterForm'>
-                            <input type="radio" id="ColorA" name="colorInput" value="ColorA"></input>
-                            <input type="radio" id="ColorB" name="colorInput" value="ColorB"></input>
-                            <input type="radio" id="ColorC" name="colorInput" value="ColorC"></input>
-                            <input type="radio" id="ColorD" name="colorInput" value="ColorD"></input>
-                            <input type="radio" id="ColorE" name="colorInput" value="ColorE"></input>
+                            <input type="radio" id="ColorA" name="colorInput" value="ColorA" checked></input>
                         </form>
                     </div>
                 </div>
                 <div className="dayDate">
                     <div className="dayDateInfo">
-                        <h1>DAY-DATE 36</h1>
-                        <h2>Oyster, 36 mm, Everose Gold and Diamonds</h2>
-                        <a>View official product page</a>
+                        <h1 className="productTexth1">DAY-DATE 36</h1>
+                        <h2 className="productTexth2">Oyster, 36 mm</h2>
+                        <a className="officialProductSite" target="_blank">View official product page</a>
                     </div>
                     <div className="dayDatePictures">
                         <div className="currentDayDatePhoto" id="currentDayDatePhoto"></div>
                         <form className='dayDateForm'>
-                            <input type="radio" id="ColorA" name="colorInput" value="ColorA"></input>
+                            <input type="radio" id="ColorA" name="colorInput" value="ColorA" defaultChecked></input>
                             <input type="radio" id="ColorB" name="colorInput" value="ColorB"></input>
                             <input type="radio" id="ColorC" name="colorInput" value="ColorC"></input>
-                            <input type="radio" id="ColorD" name="colorInput" value="ColorD"></input>
-                            <input type="radio" id="ColorE" name="colorInput" value="ColorE"></input>
                         </form>
                     </div>
                 </div>

@@ -19,7 +19,7 @@ class Navbar extends Component {
             <div className="overlay">
                 <ul>
                     <li><Link className="navLink" to="/">HOME</Link></li>
-                    <li>PRODUCTS</li>
+                    <li><Link className="navLink" to="/PorductDisplayPage">3D PRODUCT</Link></li>
                     <li><Link className="navLink" to="/AboutUsPage">ABOUT</Link></li>
                     <li><Link className="navLink" to="/ContactPage">CONTACT</Link></li>
                 </ul>
