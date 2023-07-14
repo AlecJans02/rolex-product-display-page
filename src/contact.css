@@ -8,4 +8,96 @@ body {
     height: 100vh;
     width: 100%;
     background-color: white;
+    margin: 0;
 }
+
+.pageTitle {
+    text-align: center;
+    margin-top: -100px;
+    z-index: 5;
+    position: absolute;
+    width: 100%;
+}
+
+.title {
+    font-size: 5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: black;
+}
+
+.mediaDiv {
+    width: 100%;
+    height: auto;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.socialMedia {
+    width: 60%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12%;
+    background-color: white;
+    padding-bottom: 100px;
+}
+
+.storeLocations {
+    padding-top: 100px;
+    width: 100%;
+    height: auto;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.mediaType {
+    height: 150px;
+    width: 150px;
+    background-color: white;
+    margin-top: 100px;
+    cursor: pointer;
+}
+
+.logoIMG {
+    height: 150px;
+    width: 150px;
+    object-fit: fill;
+}
+
+.locationh1 {
+    font-size: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+}
+
+td {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+    border-bottom: 1px solid #dddddd;
+}
+
+
+th {
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background-color: rgb(114, 212, 241);
+}
+
+table {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+
+

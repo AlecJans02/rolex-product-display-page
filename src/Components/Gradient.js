@@ -4,9 +4,7 @@ function normalizeColor(hexCode) {
     [t]: n
   }), {});
   
-  //Essential functionality of WebGl
-  //t = width
-  //n = height
+  
   class MiniGl {
     constructor(canvas, width, height, debug = false) {
         const _miniGl = this,
@@ -49,9 +47,9 @@ function normalizeColor(hexCode) {
                         material.attachUniforms(void 0, _miniGl.commonUniforms),
                         material.attachUniforms(void 0, material.uniforms)
                     }
-                    //t = uniform
+                    
                     attachUniforms(name, uniforms) {
-                        //n  = material
+                       
                         const material = this;
                         void 0 === name ? Object.entries(uniforms).forEach(([name, uniform]) => {
                             material.attachUniforms(name, uniform)
@@ -82,9 +80,7 @@ function normalizeColor(hexCode) {
                     update(value) {
                         void 0 !== this.value && context[`uniform${this.typeFn}`](value, 0 === this.typeFn.indexOf("Matrix") ? this.transpose : this.value, 0 === this.typeFn.indexOf("Matrix") ? this.value : null)
                     }
-                    //e - name
-                    //t - type
-                    //n - length
+                    
                     getDeclaration(name, type, length) {
                         const uniform = this;
                         if (uniform.excludeFrom !== type) {
@@ -247,7 +243,7 @@ function normalizeColor(hexCode) {
             height: t
         })
     }
-    //left, right, top, bottom, near, far
+    
     setOrthographicCamera(e = 0, t = 0, n = 0, i = -2e3, s = 2e3) {
         this.commonUniforms.projectionMatrix.value = [2 / this.width, 0, 0, 0, 0, 2 / this.height, 0, 0, 0, 0, 2 / (i - s), 0, e, t, n, 1], this.debug("setOrthographicCamera", this.commonUniforms.projectionMatrix.value)
     }
@@ -258,7 +254,7 @@ function normalizeColor(hexCode) {
   
   
   
-  //Sets initial properties
+  
   function e(object, propertyName, val) {
     return propertyName in object ? Object.defineProperty(object, propertyName, {
         value: val,
@@ -268,7 +264,7 @@ function normalizeColor(hexCode) {
     }) : object[propertyName] = val, object
   }
   
-  //Gradient object
+  
   class Gradient {
     constructor(...t) {
         e(this, "el", void 0), e(this, "cssVarRetries", 0), e(this, "maxCssVarRetries", 200), e(this, "angle", 0), e(this, "isLoadedClass", !1), e(this, "isScrolling", !1), /*e(this, "isStatic", o.disableAmbientAnimations()),*/ e(this, "scrollingTimeout", void 0), e(this, "scrollingRefreshDelay", 200), e(this, "isIntersecting", !1), e(this, "shaderFiles", void 0), e(this, "vertexShader", void 0), e(this, "sectionColors", void 0), e(this, "computedCanvasStyle", void 0), e(this, "conf", void 0), e(this, "uniforms", void 0), e(this, "t", 1253106), e(this, "last", 0), e(this, "width", void 0), e(this, "minWidth", 1111), e(this, "height", 600), e(this, "xSegCount", void 0), e(this, "ySegCount", void 0), e(this, "mesh", void 0), e(this, "material", void 0), e(this, "geometry", void 0), e(this, "minigl", void 0), e(this, "scrollObserver", void 0), e(this, "amp", 320), e(this, "seed", 5), e(this, "freqX", 14e-5), e(this, "freqY", 29e-5), e(this, "freqDelta", 1e-5), e(this, "activeColors", [1, 1, 1, 1]), e(this, "isMetaKey", !1), e(this, "isGradientLegendVisible", !1), e(this, "isMouseDown", !1), e(this, "handleScroll", () => {
@@ -327,15 +323,7 @@ function normalizeColor(hexCode) {
           requestAnimationFrame(() => {
               this.el && (this.computedCanvasStyle = getComputedStyle(this.el), this.waitForCssVars())
           })
-          /*
-          this.scrollObserver = await s.create(.1, !1),
-          this.scrollObserver.observe(this.el),
-          this.scrollObserver.onSeparate(() => {
-              window.removeEventListener("scroll", this.handleScroll), window.removeEventListener("mousedown", this.handleMouseDown), window.removeEventListener("mouseup", this.handleMouseUp), window.removeEventListener("keydown", this.handleKeyDown), this.isIntersecting = !1, this.conf.playing && this.pause()
-          }), 
-          this.scrollObserver.onIntersect(() => {
-              window.addEventListener("scroll", this.handleScroll), window.addEventListener("mousedown", this.handleMouseDown), window.addEventListener("mouseup", this.handleMouseUp), window.addEventListener("keydown", this.handleKeyDown), this.isIntersecting = !0, this.addIsLoadedClass(), this.play()
-          })*/
+          
   
         )
     }
@@ -462,10 +450,7 @@ function normalizeColor(hexCode) {
     init() {
         this.initGradientColors(), this.initMesh(), this.resize(), requestAnimationFrame(this.animate), window.addEventListener("resize", this.resize)
     }
-    /*
-    * Waiting for the css variables to become available, usually on page load before we can continue.
-    * Using default colors assigned below if no variables have been found after maxCssVarRetries
-    */
+    
     waitForCssVars() {
         if (this.computedCanvasStyle && -1 !== this.computedCanvasStyle.getPropertyValue("--gradient-color-1").indexOf("#")) this.init(), this.addIsLoadedClass();
         else {
@@ -475,13 +460,11 @@ function normalizeColor(hexCode) {
             requestAnimationFrame(() => this.waitForCssVars())
         }
     }
-    /*
-    * Initializes the four section colors by retrieving them from css variables.
-    */
+    
     initGradientColors() {
         this.sectionColors = ["--gradient-color-1", "--gradient-color-2", "--gradient-color-3", "--gradient-color-4"].map(cssPropertyName => {
             let hex = this.computedCanvasStyle.getPropertyValue(cssPropertyName).trim();
-            //Check if shorthand hex value was used and double the length so the conversion in normalizeColor will work.
+            
             if (4 === hex.length) {
                 const hexTemp = hex.substr(1).split("").map(hexTemp => hexTemp + hexTemp).join("");
                 hex = `#${hexTemp}`
