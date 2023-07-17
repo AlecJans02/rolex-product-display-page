@@ -2,13 +2,32 @@ import React, {Component} from 'react';
 import "./Homepage.css";
 import Navbar from "./Components/Navbar.jsx";
 import Rolex from "./Components/rolex.webm";
+import daytonaOyster from "./Components/onchangephotos/daytona/daytonaOyster.png";
+import daytonaPlatinum from "./Components/onchangephotos/daytona/daytonaPlatinum.png";
+import daytonaWhiteGold from "./Components/onchangephotos/daytona/daytonaWhiteGold.png";
+import daytonaYellowGold from "./Components/onchangephotos/daytona/daytonaYellowGold.png";
+import dattonaYellowGoldOyster from "./Components/onchangephotos/daytona/daytonaYellowGoldOyster.png";
+import oneNineWhite from "./Components/onchangephotos/oneNine/oneNineWhiteGold.png";
+import oneNineYellow from "./Components/onchangephotos/oneNine/oneNineYellowGold.png";
+import dwellerWhiteGold from "./Components/onchangephotos/dweller/dwellerWhiteGold.png";
+import dwellerOysterGold from "./Components/onchangephotos/dweller/dwellerOysterGold.png";
+import dwellerEveroseGold from "./Components/onchangephotos/dweller/dwellerEveroseGold.png";
+import masterOysterGold from "./Components/onchangephotos/master/masterOysterGold.png";
+import masterYellowGold from "./Components/onchangephotos/master/masterYellowGold.png";
+import dayDatePlatinum from "./Components/onchangephotos/dayDate/dayDatePlatinum.png";
+import dayDateEveroseGold from "./Components/onchangephotos/dayDate/dayDateEveroseGold.png";
+import dayDateYellowGold from "./Components/onchangephotos/dayDate/dayDateYellowGold.png";
+import explore from "./Components/onchangephotos/explore/explorer.png";
+import oyster from "./Components/onchangephotos/oyster/oyster.png";
+import yacht from "./Components/onchangephotos/yacht/yacht.png";
 
 class Homepage extends Component {
     componentDidMount () {
-        // document.getElementsByTagName('video')[0].onended = function () {
-        //     this.load();
-        //     this.play();
-        //   };
+        
+    }
+
+    daytonaPicture = (event) => {
+        console.log(event.target.value);    
     }
 
     render () {
@@ -40,13 +59,13 @@ class Homepage extends Component {
                         <a className="officialProductSite" target="_blank" href="https://www.rolex.com/en-us/watches/new-watches/new-cosmograph-daytona">View official product page</a>
                     </div>
                     <div className="daytonaPictures">
-                        <div className="currentDaytonaPhoto" id="currentDaytonaPhoto"></div>
-                        <form className='daytonaForm'>
-                            <input type="radio" id="ColorA" name="colorInput" value="ColorA" defaultChecked></input>
-                            <input type="radio" id="ColorB" name="colorInput" value="ColorB"></input>
-                            <input type="radio" id="ColorC" name="colorInput" value="ColorC"></input>
-                            <input type="radio" id="ColorD" name="colorInput" value="ColorD"></input>
-                            <input type="radio" id="ColorE" name="colorInput" value="ColorE"></input>
+                        <div className="currentDaytonaPhoto" id="currentDaytonaPhoto"><img src={daytonaOyster} alt="Watch" className="matIMG"></img></div>
+                        <form className='daytonaForm' onChange={this.daytonaPicture}>
+                            <input type="radio" id="ColorA" name="colorInputDaytona" value="ColorA" defaultChecked></input>
+                            <input type="radio" id="ColorB" name="colorInputDaytona" value="ColorB"></input>
+                            <input type="radio" id="ColorC" name="colorInputDaytona" value="ColorC"></input>
+                            <input type="radio" id="ColorD" name="colorInputDaytona" value="ColorD"></input>
+                            <input type="radio" id="ColorE" name="colorInputDaytona" value="ColorE"></input>
                         </form>
                     </div>
                 </div>
@@ -59,8 +78,8 @@ class Homepage extends Component {
                     <div className="oneNinePictures">
                         <div className="currentOneNinePhoto" id="currentOneNinePhoto"></div>
                         <form className='oneNineForm'>
-                            <input type="radio" id="ColorA" name="colorInput" value="ColorA" defaultChecked></input>
-                            <input type="radio" id="ColorB" name="colorInput" value="ColorB"></input>
+                            <input type="radio" id="ColorA" name="colorInputNine" value="ColorA" defaultChecked></input>
+                            <input type="radio" id="ColorB" name="colorInputNine" value="ColorB"></input>
                         </form>
                     </div>
                 </div>
@@ -71,9 +90,9 @@ class Homepage extends Component {
                         <a className="officialProductSite" target="_blank" href="https://www.rolex.com/watches/new-watches/new-yacht-master-42">View official product page</a>
                     </div>
                     <div className="yachtPictures">
-                        <div className="currentYachtPhoto" id="currentYachtPhoto"></div>
+                        <div className="currentYachtPhoto" id="currentYachtPhoto"><img src={yacht} alt="Watch" className="matIMG"></img></div>
                         <form className='yachtForm'>
-                            <input type="radio" id="ColorA" name="colorInput" value="ColorA" checked></input>
+                            <input type="radio" id="ColorA" name="colorInput" value="ColorA" defaultChecked></input>
                         </form>
                     </div>
                 </div>
@@ -86,9 +105,9 @@ class Homepage extends Component {
                     <div className="dwellerPictures">
                         <div className="currentDwellerPhoto" id="currentDwellerPhoto"></div>
                         <form className='dwellerForm'>
-                            <input type="radio" id="ColorA" name="colorInput" value="ColorA" defaultChecked></input>
-                            <input type="radio" id="ColorB" name="colorInput" value="ColorB"></input>
-                            <input type="radio" id="ColorC" name="colorInput" value="ColorC"></input>
+                            <input type="radio" id="ColorA" name="colorInputDweller" value="ColorA" defaultChecked></input>
+                            <input type="radio" id="ColorB" name="colorInputDweller" value="ColorB"></input>
+                            <input type="radio" id="ColorC" name="colorInputDweller" value="ColorC"></input>
                         </form>
                     </div>
                 </div>
@@ -101,8 +120,8 @@ class Homepage extends Component {
                     <div className="masterPictures">
                         <div className="currentMasterPhoto" id="currentMasterPhoto"></div>
                         <form className='masterForm'>
-                            <input type="radio" id="ColorA" name="colorInput" value="ColorA" defaultChecked></input>
-                            <input type="radio" id="ColorB" name="colorInput" value="ColorB"></input>
+                            <input type="radio" id="ColorA" name="colorInputMaster" value="ColorA" defaultChecked></input>
+                            <input type="radio" id="ColorB" name="colorInputMaster" value="ColorB"></input>
                         </form>
                     </div>
                 </div>
@@ -113,9 +132,9 @@ class Homepage extends Component {
                         <a className="officialProductSite" target="_blank" href="https://www.rolex.com/watches/new-watches/new-explorer-40">View official product page</a>
                     </div>
                     <div className="explorePictures">
-                        <div className="currentExplorePhoto" id="currentExplorePhoto"></div>
+                        <div className="currentExplorePhoto" id="currentExplorePhoto"><img src={explore} alt="Watch" className="matIMG"></img></div>
                         <form className='exploreForm'>
-                            <input type="radio" id="ColorA" name="colorInput" value="ColorA" checked></input>
+                            <input type="radio" id="ColorA" name="colorInput" value="ColorA" defaultChecked></input>
                         </form>
                     </div>
                 </div>
@@ -126,9 +145,9 @@ class Homepage extends Component {
                         <a className="officialProductSite" target="_blank" href="https://www.rolex.com/watches/new-watches/new-oyster-perpetual">View official product page</a>
                     </div>
                     <div className="oysterPictures">
-                        <div className="currentOysterPhoto" id="currentOysterPhoto"></div>
+                        <div className="currentOysterPhoto" id="currentOysterPhoto"><img src={oyster} alt="Watch" className="matIMG"></img></div>
                         <form className='oysterForm'>
-                            <input type="radio" id="ColorA" name="colorInput" value="ColorA" checked></input>
+                            <input type="radio" id="ColorA" name="colorInput" value="ColorA" defaultChecked></input>
                         </form>
                     </div>
                 </div>
@@ -141,9 +160,9 @@ class Homepage extends Component {
                     <div className="dayDatePictures">
                         <div className="currentDayDatePhoto" id="currentDayDatePhoto"></div>
                         <form className='dayDateForm'>
-                            <input type="radio" id="ColorA" name="colorInput" value="ColorA" defaultChecked></input>
-                            <input type="radio" id="ColorB" name="colorInput" value="ColorB"></input>
-                            <input type="radio" id="ColorC" name="colorInput" value="ColorC"></input>
+                            <input type="radio" id="ColorA" name="colorInputDate" value="ColorA" defaultChecked></input>
+                            <input type="radio" id="ColorB" name="colorInputDate" value="ColorB"></input>
+                            <input type="radio" id="ColorC" name="colorInputDate" value="ColorC"></input>
                         </form>
                     </div>
                 </div>

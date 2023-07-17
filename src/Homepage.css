@@ -144,6 +144,8 @@ video {
     height: 300px;
     width: 300px;
     background-color: white;
+    display: flex;
+    align-items: center;
 }
 
 .daytonaForm {
@@ -191,6 +193,8 @@ video {
     height: 300px;
     width: 300px;
     background-color: white;
+    display: flex;
+    align-items: center;
 }
 
 .oneNineForm {
@@ -237,7 +241,9 @@ video {
 .currentYachtPhoto {
     height: 300px;
     width: 300px;
-    background-color: white;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
 }
 
 .yachtForm {
@@ -285,6 +291,8 @@ video {
     height: 300px;
     width: 300px;
     background-color: white;
+    display: flex;
+    align-items: center;
 }
 
 .dwellerForm {
@@ -332,6 +340,8 @@ video {
     height: 300px;
     width: 300px;
     background-color: white;
+    display: flex;
+    align-items: center;
 }
 
 .masterForm {
@@ -378,7 +388,9 @@ video {
 .currentExplorePhoto {
     height: 300px;
     width: 300px;
-    background-color: white;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
 }
 
 .exploreForm {
@@ -425,7 +437,9 @@ video {
 .currentOysterPhoto {
     height: 300px;
     width: 300px;
-    background-color: white;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
 }
 
 .oysterForm {
@@ -473,6 +487,8 @@ video {
     height: 300px;
     width: 300px;
     background-color: white;
+    display: flex;
+    align-items: center;
 }
 
 .dayDateForm {
@@ -506,4 +522,10 @@ input {
     font-weight: bold;
     color: black;
     cursor: pointer;
+}
+
+.matIMG {
+    object-fit: fill;
+    width: 300px;
+    height: 200px;
 }
