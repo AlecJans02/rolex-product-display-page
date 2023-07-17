@@ -54,7 +54,7 @@ class Homepage extends Component {
                     <div className="oneNineInfo">
                         <h1 className="productTexth1">1908</h1>
                         <h2 className="productTexth2">39 mm, 18 kt Gold, Polished Finish</h2>
-                        <a className="officialProductSite" target="_blank">View official product page</a>
+                        <a className="officialProductSite" target="_blank" href="https://www.rolex.com/watches/new-watches/new-1908">View official product page</a>
                     </div>
                     <div className="oneNinePictures">
                         <div className="currentOneNinePhoto" id="currentOneNinePhoto"></div>
@@ -68,7 +68,7 @@ class Homepage extends Component {
                     <div className="yachtInfo">
                         <h1 className="productTexth1">YACHT-MASTER 42</h1>
                         <h2 className="productTexth2">Oyster, 42 mm, RLX Titanium</h2>
-                        <a className="officialProductSite" target="_blank">View official product page</a>
+                        <a className="officialProductSite" target="_blank" href="https://www.rolex.com/watches/new-watches/new-yacht-master-42">View official product page</a>
                     </div>
                     <div className="yachtPictures">
                         <div className="currentYachtPhoto" id="currentYachtPhoto"></div>
@@ -81,7 +81,7 @@ class Homepage extends Component {
                     <div className="dwellerInfo">
                         <h1 className="productTexth1">SKY-DWELLER</h1>
                         <h2 className="productTexth2">Oyster, 42 mm</h2>
-                        <a className="officialProductSite" target="_blank">View official product page</a>
+                        <a className="officialProductSite" target="_blank" href="https://www.rolex.com/watches/new-watches/new-sky-dweller">View official product page</a>
                     </div>
                     <div className="dwellerPictures">
                         <div className="currentDwellerPhoto" id="currentDwellerPhoto"></div>
@@ -96,7 +96,7 @@ class Homepage extends Component {
                     <div className="masterInfo">
                         <h1 className="productTexth1">GMT-MASTER II</h1>
                         <h2 className="productTexth2">Oyster, 40 mm, Oystersteel And Yellow Gold</h2>
-                        <a className="officialProductSite" target="_blank">View official product page</a>
+                        <a className="officialProductSite" target="_blank" href="https://www.rolex.com/watches/new-watches/new-gmt-master-ii">View official product page</a>
                     </div>
                     <div className="masterPictures">
                         <div className="currentMasterPhoto" id="currentMasterPhoto"></div>
@@ -110,7 +110,7 @@ class Homepage extends Component {
                     <div className="exploreInfo">
                         <h1 className="productTexth1">EXPLORER 40</h1>
                         <h2 className="productTexth2">Oyster, 40 mm, Oystersteel</h2>
-                        <a className="officialProductSite" target="_blank">View official product page</a>
+                        <a className="officialProductSite" target="_blank" href="https://www.rolex.com/watches/new-watches/new-explorer-40">View official product page</a>
                     </div>
                     <div className="explorePictures">
                         <div className="currentExplorePhoto" id="currentExplorePhoto"></div>
@@ -123,7 +123,7 @@ class Homepage extends Component {
                     <div className="oysterInfo">
                         <h1 className="productTexth1">OYSTER PERPETUAL 41</h1>
                         <h2 className="productTexth2">Oyster, 41 mm, Oystersteel</h2>
-                        <a className="officialProductSite" target="_blank">View official product page</a>
+                        <a className="officialProductSite" target="_blank" href="https://www.rolex.com/watches/new-watches/new-oyster-perpetual">View official product page</a>
                     </div>
                     <div className="oysterPictures">
                         <div className="currentOysterPhoto" id="currentOysterPhoto"></div>
@@ -136,7 +136,7 @@ class Homepage extends Component {
                     <div className="dayDateInfo">
                         <h1 className="productTexth1">DAY-DATE 36</h1>
                         <h2 className="productTexth2">Oyster, 36 mm</h2>
-                        <a className="officialProductSite" target="_blank">View official product page</a>
+                        <a className="officialProductSite" target="_blank" href="https://www.rolex.com/watches/new-watches/new-day-date-36">View official product page</a>
                     </div>
                     <div className="dayDatePictures">
                         <div className="currentDayDatePhoto" id="currentDayDatePhoto"></div>
