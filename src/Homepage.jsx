@@ -27,7 +27,69 @@ class Homepage extends Component {
     }
 
     daytonaPicture = (event) => {
-        console.log(event.target.value);    
+        const daytonaSrc = document.getElementById("daytonaSrc");
+        //console.log(event.target.value);  use this line if need to test event value
+        if (event.target.value == "ColorA") {
+            daytonaSrc.src = `${daytonaOyster}`;
+        } else if (event.target.value == "ColorB") {
+            daytonaSrc.src = `${daytonaPlatinum}`;
+        } else if (event.target.value == "ColorC") {
+            daytonaSrc.src = `${daytonaWhiteGold}`;
+        } else if (event.target.value == "ColorD") {
+            daytonaSrc.src = `${daytonaYellowGold}`;
+        } else if (event.target.value == "ColorE") {
+            daytonaSrc.src = `${dattonaYellowGoldOyster}`;
+        } else {
+            console.log("current value:" + event.target.value + "does not match color options");
+        }
+    }
+
+    oneNinePicture = (event) => {
+        const oneNineSrc = document.getElementById("oneNineSrc");
+        if (event.target.value == "ColorA") {
+            oneNineSrc.src = `${oneNineWhite}`;
+        } else if (event.target.value == "ColorB") {
+            oneNineSrc.src = `${oneNineYellow}`;
+        } else {
+            console.log("current value:" + event.target.value + "does not match color options");
+        }
+    }
+
+    dwellerPicture = (event) => {
+        const dwellerSrc = document.getElementById("dwellerSrc");
+        if (event.target.value == "ColorA") {
+            dwellerSrc.src = `${dwellerEveroseGold}`;
+        } else if (event.target.value == "ColorB") {
+            dwellerSrc.src = `${dwellerOysterGold}`;
+        } else if (event.target.value == "ColorC") {
+            dwellerSrc.src = `${dwellerWhiteGold}`;
+        } else {
+            console.log("current value:" + event.target.value + "does not match color options");
+        }
+    }
+
+    masterPicture = (event) => {
+        const masterSrc = document.getElementById("masterSrc");
+        if (event.target.value == "ColorA") {
+            masterSrc.src = `${masterOysterGold}`;
+        } else if (event.target.value == "ColorB") {
+            masterSrc.src = `${masterYellowGold}`;
+        } else {
+            console.log("current value:" + event.target.value + "does not match color options");
+        }
+    }
+
+    dayDatePicture = (event) => {
+        const dayDateSrc = document.getElementById("dayDateSrc");
+        if (event.target.value == "ColorA") {
+            dayDateSrc.src = `${dayDatePlatinum}`;
+        } else if (event.target.value == "ColorB") {
+            dayDateSrc.src = `${dayDateEveroseGold}`;
+        } else if (event.target.value = "ColorC") {
+            dayDateSrc.src = `${dayDateYellowGold}`;
+        } else {
+            console.log("current value:" + event.target.value + "does not match color options");
+        }
     }
 
     render () {
@@ -59,7 +121,7 @@ class Homepage extends Component {
                         <a className="officialProductSite" target="_blank" href="https://www.rolex.com/en-us/watches/new-watches/new-cosmograph-daytona">View official product page</a>
                     </div>
                     <div className="daytonaPictures">
-                        <div className="currentDaytonaPhoto" id="currentDaytonaPhoto"><img src={daytonaOyster} alt="Watch" className="matIMG"></img></div>
+                        <div className="currentDaytonaPhoto" id="currentDaytonaPhoto"><img src={daytonaOyster} alt="Watch" className="matIMG" id="daytonaSrc"></img></div>
                         <form className='daytonaForm' onChange={this.daytonaPicture}>
                             <input type="radio" id="ColorA" name="colorInputDaytona" value="ColorA" defaultChecked></input>
                             <input type="radio" id="ColorB" name="colorInputDaytona" value="ColorB"></input>
@@ -76,8 +138,8 @@ class Homepage extends Component {
                         <a className="officialProductSite" target="_blank" href="https://www.rolex.com/watches/new-watches/new-1908">View official product page</a>
                     </div>
                     <div className="oneNinePictures">
-                        <div className="currentOneNinePhoto" id="currentOneNinePhoto"></div>
-                        <form className='oneNineForm'>
+                        <div className="currentOneNinePhoto" id="currentOneNinePhoto"><img src={oneNineWhite} alt="Watch" className="matIMG" id="oneNineSrc"></img></div>
+                        <form className='oneNineForm' onChange={this.oneNinePicture}>
                             <input type="radio" id="ColorA" name="colorInputNine" value="ColorA" defaultChecked></input>
                             <input type="radio" id="ColorB" name="colorInputNine" value="ColorB"></input>
                         </form>
@@ -103,8 +165,8 @@ class Homepage extends Component {
                         <a className="officialProductSite" target="_blank" href="https://www.rolex.com/watches/new-watches/new-sky-dweller">View official product page</a>
                     </div>
                     <div className="dwellerPictures">
-                        <div className="currentDwellerPhoto" id="currentDwellerPhoto"></div>
-                        <form className='dwellerForm'>
+                        <div className="currentDwellerPhoto" id="currentDwellerPhoto"><img src={dwellerEveroseGold} alt="Watch" className="matIMG" id="dwellerSrc"></img></div>
+                        <form className='dwellerForm' onChange={this.dwellerPicture}>
                             <input type="radio" id="ColorA" name="colorInputDweller" value="ColorA" defaultChecked></input>
                             <input type="radio" id="ColorB" name="colorInputDweller" value="ColorB"></input>
                             <input type="radio" id="ColorC" name="colorInputDweller" value="ColorC"></input>
@@ -118,8 +180,8 @@ class Homepage extends Component {
                         <a className="officialProductSite" target="_blank" href="https://www.rolex.com/watches/new-watches/new-gmt-master-ii">View official product page</a>
                     </div>
                     <div className="masterPictures">
-                        <div className="currentMasterPhoto" id="currentMasterPhoto"></div>
-                        <form className='masterForm'>
+                        <div className="currentMasterPhoto" id="currentMasterPhoto"><img src={masterOysterGold} alt="Watch" className="matIMG" id="masterSrc"></img></div>
+                        <form className='masterForm' onChange={this.masterPicture}>
                             <input type="radio" id="ColorA" name="colorInputMaster" value="ColorA" defaultChecked></input>
                             <input type="radio" id="ColorB" name="colorInputMaster" value="ColorB"></input>
                         </form>
@@ -158,8 +220,8 @@ class Homepage extends Component {
                         <a className="officialProductSite" target="_blank" href="https://www.rolex.com/watches/new-watches/new-day-date-36">View official product page</a>
                     </div>
                     <div className="dayDatePictures">
-                        <div className="currentDayDatePhoto" id="currentDayDatePhoto"></div>
-                        <form className='dayDateForm'>
+                        <div className="currentDayDatePhoto" id="currentDayDatePhoto"><img src={dayDatePlatinum} alt="Watch" className="matIMG" id="dayDateSrc"></img></div>
+                        <form className='dayDateForm' onChange={this.dayDatePicture}>
                             <input type="radio" id="ColorA" name="colorInputDate" value="ColorA" defaultChecked></input>
                             <input type="radio" id="ColorB" name="colorInputDate" value="ColorB"></input>
                             <input type="radio" id="ColorC" name="colorInputDate" value="ColorC"></input>
